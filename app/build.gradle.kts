@@ -38,14 +38,12 @@ android {
         jvmTarget = "1.8"
     }
 
-
     //Activando Binding
-    viewBinding {
+    viewBinding{
         enable = true
     }
 
 }
-
 
 dependencies {
 
@@ -57,14 +55,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    //Agregando las dependencias
+    //Agregando las depedencias
     //Retrofit
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    //Conversor
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
-    implementation("com.google.code.gson:gson:2.11.0")
-    //Interceptor
+    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
+    // Conversor
+    implementation ("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation ("com.google.code.gson:gson:2.11.0")
+    //interceptor
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     //Corrutinas
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
@@ -72,8 +69,5 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
     //Picasso
-    implementation("com.squareup.picasso:picasso:2.8")
-
-
-
+    implementation ("com.squareup.picasso:picasso:2.8")
 }
