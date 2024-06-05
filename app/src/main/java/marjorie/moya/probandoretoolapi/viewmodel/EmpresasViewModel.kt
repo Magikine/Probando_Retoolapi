@@ -42,12 +42,11 @@ class EmpresasViewModel : ViewModel() {
                         response: Response<List<EmpresasResponse>>//la respuesta de la Api
                     ) {
                         //vamos a ver si la Api me respondio bien
-                        if (response.isSuccessful) {
-                        val  respuesta = response.body()
+                        if (response.isSuccessful){
+                            val respuesta = response.body()
                             listaEmpresas.postValue(respuesta)
-
-                        } else {
-                            //mostrar mensaje de error
+                        }else{
+                            //Mostrar mensaje de error
                         }
                     }
                     //Metodo que se va a ejecutar si  hay algun error
