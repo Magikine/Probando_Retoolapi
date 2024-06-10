@@ -1,10 +1,11 @@
 package marjorie.moya.probandoretoolapi.model.network
 
 import marjorie.moya.probandoretoolapi.model.EmpresasResponse
+
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
-
+import marjorie.moya.probandoretoolapi.model.EmpresasDetalleResponse
 /**
  * interfaz que va a tener las Apis que vamos a usar
  */
@@ -15,5 +16,6 @@ interface ApiService {
 
     //Detalle de empresas
     @GET("empresas/{id_empresa}") //https://retoolapi.dev/cluuwe/empresas/9
-    fun detalleEmpresa(@Path("id_empresa") empresaCargar : Int): Call<EmpresasResponse>
+    fun detalleEmpresa(@Path("id_empresa") empresaCargar : Int): Call<EmpresasDetalleResponse>
 }
+

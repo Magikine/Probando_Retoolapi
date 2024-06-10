@@ -8,13 +8,12 @@ import retrofit2.converter.gson.GsonConverterFactory
  */
 class RetrofitClass {
 
-    //Se crea una instancia de retrofit  que se configura
-    companion object{
-        //Cajita que se conecta a la Api
-      val retrofit = Retrofit.Builder()
-          .baseUrl("https://retoolapi.dev/cluuwe") // Url base de la Api
-          .addConverterFactory(GsonConverterFactory.create())//Convertidor de json a Objetos
-          .build()
-
+    //Se crea una intancia de retrofit que se configura
+    companion object {
+        //Cajita que se conecta a la API
+        val retrofit = Retrofit.Builder()
+            .baseUrl("https://retoolapi.dev/cluuwe/") //url base de la API
+            .addConverterFactory(GsonConverterFactory.create())//Convertidor de Json a Objetos
+            .build()
     }
 }
